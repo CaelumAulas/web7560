@@ -18,8 +18,9 @@ function mudaTexto() {
     blocos[1].classList.add('blocos_vertical')
   } else {
     btn.textContent = 'Horizontal'
-    blocos[0].classList.remove('blocos_vertical')
-    blocos[1].classList.remove('blocos_vertical')
+    blocos.forEach(function(bloco, index) {
+      bloco.classList.remove('blocos_vertical')
+    })
   }
 
 }
