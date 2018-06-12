@@ -1,0 +1,10 @@
+.btn {
+  display: block;
+  color: #0984e3 !important; /* c#0984e3 */
+  border: 3px solid #0984e3; /* bd */
+  background-color: #ffffff; /* bgc#FFF */
+  width: 400px; /* w400+h80 */
+  height: 80px;
+  font-size: 40px;
+  cursor: pointer;
+}
