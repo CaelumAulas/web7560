@@ -14,8 +14,6 @@ function mudaTexto() {
     // for(var index = 0; index < blocos.length; index = index + 1) {
     //   blocos[index].classList.add('blocos_vertical')
     // }
-    
-    blocos[1].classList.add('blocos_vertical')
   } else {
     btn.textContent = 'Horizontal'
     blocos.forEach(function(bloco, index) {
@@ -25,11 +23,7 @@ function mudaTexto() {
 
 }
 
-// function bug() {
-//   btn.textContent = 'Coiso'
-// }
-
 btn.onclick = mudaTexto
-// btn.onclick = bug
+
 
 
