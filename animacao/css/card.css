@@ -1,0 +1,38 @@
+:root {
+  --heright-card: 200px;
+}
+
+.card {
+  width: 33.33vw;
+  height: var(--heright-card);
+  background-color: #28bfe9;
+  margin: calc(50vh - var(--heright-card)/2) auto 0;
+
+  transition: opacity 500ms linear;
+}
+
+.card_remove {
+  opacity: 0;
+}
+
+.card-menu-item {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #d63031;
+  transform: translate(20px, -50%);
+  color: #ffffff;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
