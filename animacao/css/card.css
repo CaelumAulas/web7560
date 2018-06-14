@@ -3,16 +3,36 @@
 }
 
 .card {
-  width: 33.33vw;
+  width: 33vw;
   height: var(--heright-card);
   background-color: #28bfe9;
-  margin: calc(50vh - var(--heright-card)/2) auto 0;
+  display: inline-block;
+  margin-top: 100px;
+  
 
   transition: opacity 500ms linear;
 }
 
+.card:hover .card-menu,
+.card:focus .card-menu,
+.card_focus .card-menu {
+  pointer-events: auto;
+  opacity: 1;
+}
+
 .card_remove {
   opacity: 0;
+}
+
+.card-menu {
+  pointer-events: none;
+  opacity: 0;
+
+  transition: opacity 200ms linear;
+}
+
+.card-menu_show {
+
 }
 
 .card-menu-item {
