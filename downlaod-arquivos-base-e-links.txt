@@ -5,4 +5,17 @@ https://mariosouto.com/border-radius-reverse/
 https://drafts.css-houdini.org/
 https://hg.css-houdini.org/drafts
 
+https://novatec.com.br/livros/expressoes-regulares-5ed/ -> pinceladasdaweb(20%)
+https://regex101.com/
+
+https://willianjusten.com.br/falando-sobre-rscss/
+https://willianjusten.com.br/organizando-seu-css-com-itcss/
+
+casadocodigo -> MARCO_BRUNO_CAELUM(10%)
+
 Kindle Fire 7HDX
+
+
+```
+$('.separator').each(function(index, element) {console.log(this); console.log(index)})
+```
