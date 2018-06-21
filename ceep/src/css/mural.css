@@ -5,10 +5,14 @@
 @media (min-width: 560px){
 	.mural {
 		text-align: center;
-		display: flex;
+		
 		flex-wrap: wrap;
 		align-items: flex-start;
 		justify-content: space-around;
+	}
+
+	.flexwrap .mural {
+		display: flex;
 	}
 
 	.mural--linha {

@@ -5,6 +5,7 @@
     "http-server": "^0.11.1"
   },
   "scripts": {
-    "start": "babel src/ --out-dir dist/ --copy-files --presets env --watch & http-server dist"
+    "start": "babel src/ --out-dir dist/ --copy-files --presets env --watch & npm run server",
+    "server": "http-server -c-1 dist"
   }
 }

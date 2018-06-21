@@ -11,6 +11,15 @@
 	transition: transform .2s ease-in;
 }
 
+.mural--linha .cartao {
+	display: block;
+	margin: 0 auto;
+}
+
+.mural--linha .cartao + .cartao {
+	margin-top: 1em;
+}
+
 .cartao--some {
 	opacity: 0;
 	transition: 0.5s;
