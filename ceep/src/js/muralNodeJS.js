@@ -1,13 +1,17 @@
+// Closure é o jeito de implementar o Module Pattern
 
-;(function(){
+// Module Pattern
+// IIFE e Closures
 
-// privada
+
+console.log("oi")
+
 let numeroDoCartao = 0
 
-        
-// exportar
-// pública
-window.adicionaCartao = function({conteudo, cor = "#EBEF40"}){
+const mural = {}
+
+mural.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
+    console.log("tchau")
 
     numeroDoCartao++
 
@@ -72,5 +76,4 @@ window.adicionaCartao = function({conteudo, cor = "#EBEF40"}){
     $cartao.appendTo(".mural")
 }
 
-})()
-
+module.exports = mural

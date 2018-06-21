@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "http-server": "^0.11.1"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/babel src/ --out-dir dist/ --copy-files --presets env --watch & http-server dist"
+  }
+}
