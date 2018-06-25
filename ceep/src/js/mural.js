@@ -4,14 +4,12 @@
 // IIFE e Closures
 const mural = Object.freeze((function(){
 "use strict"
-console.log("oi")
 
 let numeroDoCartao = 0
 
 const muralModule = {}
 
 muralModule.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
-    console.log("tchau")
 
     numeroDoCartao++
 
@@ -60,6 +58,7 @@ muralModule.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
     })
 
     $cartao.on("keydown", function deixaClicarComEnter(event){
+        console.log(event.key)
         if(event.target.classList.contains("opcoesDoCartao-opcao") && (event.key === 'Enter' || event.key === ' ')){
             event.target.click()
         }
