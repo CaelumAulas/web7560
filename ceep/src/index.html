@@ -36,7 +36,7 @@
           Linhas
         </button>
 
-        <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync botaoSync--sincronizado no-js">
+        <button id="btnSync" class="opcoesDaPagina-opcao opcoesDaPagina-botao botaoSync no-js">
           <svg class="botaoSync-icone">
             <use xlink:href="#iconeSincronizar"></use>
           </svg>
@@ -54,8 +54,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="js/opcoesDaPagina/btnMudaLayout.js"></script>
     <script src="js/mural.js"></script>
+
     <!-- <script src="js/muralModsuloES.js"></script> -->
     <script src="js/formNovoCartao.js"></script>
     <script src="js/opcoesDaPagina/btnAjuda.js"></script>
+    <script src="js/opcoesDaPagina/btnSync.js"></script>
+
+
+    <!-- <script>
+      function oi(respostaObjeto){
+        const cartoes = respostaObjeto.cartoes
+        
+        cartoes.forEach(cartao =>  {
+          mural.adicionaCartao(cartao)
+        })
+      }
+    </script>
+    <script src="http://ceep.herokuapp.com/cartoes/carregar?usuario=artur.adam@caelum.com.br&callback=oi" async></script> -->
+
   </body>
 </html>

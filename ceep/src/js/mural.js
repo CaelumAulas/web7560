@@ -2,14 +2,19 @@
 
 // Module Pattern
 // IIFE e Closures
-const mural = Object.freeze((function(){
+const mural = Object.freeze((function(){    
 "use strict"
 
 let numeroDoCartao = 0
 
 const muralModule = {}
 
+muralModule.cartoes = []
+
 muralModule.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
+
+    const cartao = {conteudo, cor}
+    muralModule.cartoes.push(cartao)
 
     numeroDoCartao++
 
@@ -55,6 +60,11 @@ muralModule.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
     // Funcionalidade muda cor dos cartões
     $cartao.on("change", ".opcoesDoCartao-radioTipo", function mudaCor(event){
         $cartao.css("background-color", event.target.value)
+        cartao.cor = event.target.value
+    })
+
+    $cartao.on("input", ".cartao-conteudo", function(event){
+        cartao.conteudo = event.target.textContent
     })
 
     $cartao.on("keydown", function deixaClicarComEnter(event){
