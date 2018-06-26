@@ -79,11 +79,26 @@ muralModule.adicionaCartao = function ({conteudo, cor = "#EBEF40"}){
         $cartao.addClass("cartao--some")
         $cartao.on("transitionend", function(){
             $cartao.remove()
+            const posicaoCartao = muralModule.cartoes.indexOf(cartao)
+            muralModule.cartoes.splice(posicaoCartao, 1)
         })
     })
 
     $cartao.appendTo(".mural")
 }
+
+$.ajax({
+    url: "http://ceep.herokuapp.com/cartoes/carregar?usuario=artur.adam@caelum.com.br"
+    ,method: "GET"
+    ,dataType: "jsonp"
+    ,success: function (respostaObjeto){
+        const cartoes = respostaObjeto.cartoes
+    
+        cartoes.forEach(cartao =>  {
+            mural.adicionaCartao(cartao)
+        })
+    }
+})
 
 return muralModule
 

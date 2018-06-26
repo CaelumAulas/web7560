@@ -22,7 +22,6 @@ btnAjuda.click(function(){
             mural.adicionaCartao(instrucao)
         })
     })
-        
 })
 
 // const btnAjuda = $('#btnAjuda')
